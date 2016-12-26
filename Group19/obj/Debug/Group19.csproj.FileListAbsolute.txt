@@ -4,3 +4,9 @@ C:\Users\Alex-Vaio\Desktop\Group19\Group19\bin\Debug\Group19.pdb
 C:\Users\Alex-Vaio\Desktop\Group19\Group19\obj\Debug\Group19.csprojResolveAssemblyReference.cache
 C:\Users\Alex-Vaio\Desktop\Group19\Group19\obj\Debug\Group19.exe
 C:\Users\Alex-Vaio\Desktop\Group19\Group19\obj\Debug\Group19.pdb
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Group19\bin\Debug\Group19.exe.config
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Group19\obj\Debug\Group19.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Group19\obj\Debug\Group19.pdb
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Group19\bin\Debug\Group19.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Group19\bin\Debug\Group19.pdb
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Group19\obj\Debug\Group19.csprojResolveAssemblyReference.cache

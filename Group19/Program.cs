@@ -37,12 +37,18 @@ namespace Group19
             //int number = 10;
             //number += 2;
             //number = number + 2;
-            DateTime date = new DateTime(2016, 12, 19);
-            Console.WriteLine(date.DayOfWeek);
+            Console.WriteLine("Введите число 1");
+            int day2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Считано занчение {0}", day2);
 
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("4865132");
-            
+            DateTime date2 = new DateTime(2016, 12, day2, 16, 52, 0);
+            DateTime date1 = new DateTime(2016, 12, 15, 18, 41, 0);
+            TimeSpan span = date2 - date1;
+            Console.WriteLine(span);
+            //Console.WriteLine(date.DayOfWeek);
+
+            //Console.ForegroundColor = ConsoleColor.Yellow;
+            //Console.WriteLine("4865132");
 
         }
     }
