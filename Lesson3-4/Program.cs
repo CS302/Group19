@@ -7,35 +7,35 @@ using System.Threading.Tasks;
 
 namespace Lesson3_4
 {
+    /*
+     * Файл Program.cs правой кнопкой - > Перейти к схеме класов
+     * Файл Program.cs правой кнопкой - > Показать на карте кода
+     */
     class Program
     {
         static void Main(string[] args)
         {
-            Worker worker1 = new Worker("Hulk", 27, 61311546);
-            //worker1.name = "Hulk";
-            //worker1.age = 27;
-            //worker1.snn = 6131546;
-            worker1.Age = -32;
-            Console.WriteLine(worker1.Age);
-            worker1.Print();
             
-            Worker worker2 = new Worker("John", 47, 132146);
-            worker2.Print();
+            Worker[] workers = new Worker[3];
+            workers[0] = new Manager("Hulk", 49, 864351, 15);
+            workers[1] = new Driver("John", 28, 65364, "Audi", 256);
+            workers[2] = new Manager("Ivan", 29, 46513, 15);
 
-            Random rnd = new Random();
+            for (int i = 0; i < workers.Length; i++)
+            {
+                workers[i].Print();
+                Console.WriteLine();
+            }
             
-
-            Worker worker3 = new Worker("Alex", rnd.Next(1, 101));
-            worker3.Print();
-            Console.WriteLine(Worker.count);
         }
     }
 
-    class Worker
+    abstract class Worker
     {
         public string name;
         private int age; //поле 
-        public int snn;
+        protected int snn;
+        protected int salary;
         public static int count;
 
         public int Age //свойство
@@ -71,12 +71,17 @@ namespace Lesson3_4
             return age;
         }
 
-        public void Print()
+        public abstract double GetBonus();
+        //{
+        //    return 0; - было нужно для виртуального метода.
+        //}   при переходе к абстрактному методу реализация уже не нужна.
+
+        public virtual void Print()
         {
             Console.WriteLine("Имя: " + name);
             Console.WriteLine("Возраст: " + Age);
             Console.WriteLine("ИНН: " + snn);
-            Console.WriteLine();
+            Console.WriteLine("З/П: " + salary);
         }
 
         public Worker(string name, int age, int snn)
@@ -84,6 +89,7 @@ namespace Lesson3_4
             this.name = name;
             Age = age;
             this.snn = snn;
+            this.salary = 35000;
             count++;
         }
         public Worker(string name, int age)
@@ -95,4 +101,58 @@ namespace Lesson3_4
             count = 0;
         }
     }
+
+    class Driver : Worker
+    {
+        public string carType;
+        public int hours;
+
+        public Driver(string name, int age, int snn, string carType, int hours)
+            : base(name, age, snn)
+        {
+            this.carType = carType;
+            this.hours = hours;
+            salary = 45000;
+        }
+
+        public override double GetBonus()
+        {
+            return hours * 100;
+        }
+
+        public override void Print()
+        {
+            base.Print();
+            Console.WriteLine("Машина: " + carType);
+            Console.WriteLine("Кол-во часов: " + hours);
+            Console.WriteLine("Премия: " + GetBonus());
+            Console.WriteLine();
+        }
+    }
+
+    sealed class Manager : Worker
+    {
+        public int projCount;
+
+        public Manager(string name, int age, int snn, int projCount)
+            : base(name, age, snn)
+        {
+            this.projCount = projCount;
+            salary = 55000;
+        }
+
+        public override double GetBonus()
+        {
+            return projCount * 1500;
+        }
+
+        public override void Print()
+        {
+            base.Print();
+            Console.WriteLine("Кол-во проектов: " + projCount);
+            Console.WriteLine("Премия: " + GetBonus());
+            Console.WriteLine();
+        }
+    }
+
 }
