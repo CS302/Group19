@@ -1,0 +1,12 @@
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Lesson7\bin\Debug\Lesson7.exe.config
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Lesson7\bin\Debug\Lesson7.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Lesson7\bin\Debug\Lesson7.pdb
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Lesson7\obj\Debug\Lesson7.csprojResolveAssemblyReference.cache
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Lesson7\obj\Debug\Lesson7.Form1.resources
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Lesson7\obj\Debug\Lesson7.Properties.Resources.resources
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Lesson7\obj\Debug\Lesson7.csproj.GenerateResource.Cache
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Lesson7\obj\Debug\Lesson7.exe
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Lesson7\obj\Debug\Lesson7.pdb
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Lesson7\obj\Debug\Lesson7.Form2.resources
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Lesson7\bin\Debug\WorkersLibrary.dll
+C:\Users\Alex-Vaio\Documents\GitHub\Group19\Lesson7\bin\Debug\WorkersLibrary.pdb
